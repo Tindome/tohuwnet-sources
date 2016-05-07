@@ -1,0 +1,19 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Ron Scott-Adams -- Owner -- @Tohuw
+
+# THANKS
+
+    Jekyll
+    Thoughtbot
+    Lunr
+    jekyll.tips
+
+# TECHNOLOGY COLOPHON
+
+    Jekyll
+    Sass + Bourbon, CSS3, H5BP + HTML5
+    jQuery, Modernizr, Normalize.css, Lunr
