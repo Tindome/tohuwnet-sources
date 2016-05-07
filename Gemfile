@@ -1,17 +1,24 @@
 source 'https://rubygems.org'
+
 gem 'jekyll', '>= 3.1.3'
+
 group :jekyll_plugins do
 end
+
 group :css do
   gem 'bourbon', '>= 5.0.0.beta.5'
   gem 'neat', '>= 1.7.4'
   gem 'bitters', '>= 1.3.1'
 end
+
 group :test do
   gem 'rubocop', '>=  0.39.0'
   gem 'html-proofer', '>= 3.0.5'
   gem 'scss_lint', '>= 0.48.0'
 end
+
+# This is a group containing base gems used on my OS X systems.
+# The project does not really depend on them.
 group :stock do
   gem 'bigdecimal', '>= 1.2.8'
   gem 'bundle', '>= 0.0.1'
