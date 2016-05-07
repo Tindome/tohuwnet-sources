@@ -3,14 +3,14 @@ gem 'jekyll', '>= 3.1.3'
 group :jekyll_plugins do
 end
 group :css do
-  gem 'bourbon', '>= 4.2.3'
-  gem 'neat', '>= 1.7.2'
-  gem 'bitters', '>= 1.0.0'
+  gem 'bourbon', '>= 5.0.0.beta.5'
+  gem 'neat', '>= 1.7.4'
+  gem 'bitters', '>= 1.3.1'
 end
 group :test do
-  gem 'rubocop', '>=  0.15.0'
-  gem 'html-proofer', '>= 2.1.0'
-  gem 'scss_lint', '>= 0.33.0'
+  gem 'rubocop', '>=  0.39.0'
+  gem 'html-proofer', '>= 3.0.5'
+  gem 'scss_lint', '>= 0.48.0'
 end
 group :stock do
   gem 'bigdecimal', '>= 1.2.8'
