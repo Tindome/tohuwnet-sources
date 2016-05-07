@@ -3,6 +3,21 @@ source 'https://rubygems.org'
 gem 'jekyll', '>= 3.1.3'
 
 group :jekyll_plugins do
+  gem 'octopress-minify-html', '>= 1.3.1'
+  gem 'jekyll-tagging', '>= 1.0.1'
+  gem 'jekyll_version_plugin', '>= 1.0.2'
+  gem 'liquid_pluralize', '>= 1.0.1'
+  gem 'liquid_reading_time', '>= 1.1.1'
+  gem 'octopress-quote-tag', '>= 1.0.4'
+  gem 'octopress-pullquote-tag', '>= 1.0.1'
+  gem 'octopress-gist', '>= 1.3.5'
+  gem 'octopress-date-format', '>= 3.0.3'
+  gem 'octopress-autoprefixer', '>= 2.0.0'
+  gem 'octopress-social', '>= 1.4.5'
+  gem 'jekyll-feed', '>= 0.5.1'
+  gem 'jekyll-redirect-from', '>= 0.10.0'
+  gem 'font-awesome-sass', '>= 4.6.2'
+  gem 'autoprefixer-rails', '>= 6.3.6'
 end
 
 group :css do

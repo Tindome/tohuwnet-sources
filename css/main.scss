@@ -3,12 +3,15 @@
 @charset "utf-8";
 
 @import
+  "normalize",
+  "h5bp",
   "bourbon/bourbon",
   "base/base",
   "neat/neat",
   "include-media",
   "webfont-face",
-  "fontawesome/font-awesome"
+  "font-awesome-sprockets",
+  "font-awesome"
 ;
 
 $fonts_dir: "../fonts" !default;

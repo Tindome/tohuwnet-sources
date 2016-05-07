@@ -42,6 +42,18 @@ social_title:
 rss_title: icon
 twitter_title: icon
 twitter_username: tohuw
+twitter:
+  username: :twitter_username
+  tweet_count: false
+  size: normal
+  embedded_link_color:
+  follow_count: false
+  tweet_message: ":title by :username :hashtags - :url"
+  tweet_link_text: Twitter
+  tweet_link_title: Discuss on Twitter
+  profile_link_text: Follow :username
+  profile_link_title: Follow :username on Twitter
+  twitter_hashtag: :slug
 linkedin_title: icon
 linkedin_username: tohuw
 github_title: icon
@@ -57,16 +69,10 @@ recentposts_count: 3
 
 # Blogroll
 blogroll_title: More, Elsewhere
-blogroll_footer_count: 6
+blogroll_footer_count: 4
 blogroll:
-    - name: RoundTower Blog
-      subtitle: Interesting reading from my stellar employer
-      url: http://www.roundtower.com/blog/
-    - name: HighExecutive.Net
-      subtitle: Ruminations of my illustrious wife
-      url: http://highexecutive.net
     - name: Yellow Bricks
-      subtitle: A VMware CTO with great, usable thoughts
+      subtitle: Great, usable thoughts about VMware products
       url: http://yellow-bricks.com
     - name: Dadhacker
       subtitle: Atari, Apple, Microsoft... He's seen some things
@@ -84,13 +90,13 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "posts"
+      layout: "post"
   -
     scope:
       path: ""
       type: "pages"
     values:
-      layout: "pages"
+      layout: "page"
 
 # Readtime
 readtime_display: true
@@ -100,6 +106,10 @@ readtime_title: icon
 license_display: true
 license_title: "CC BY-NC-SA 4.0"
 license_url: https://tohuw.net/rights/
+
+# Analytics
+# piwik_url: https://tohuw.net/stats
+# piwik_siteid: 1
 
 # Build settings
 markdown: kramdown
@@ -111,7 +121,3 @@ exclude:
 permalink: /articles/:title
 post_ext: md
 page_ext: html
-
-# Analytics
-# piwik_url: https://tohuw.net/stats
-# piwik_siteid: 1

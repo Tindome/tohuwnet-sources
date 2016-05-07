@@ -1,0 +1,41 @@
+<header class="post-header">
+  <h1 class="post-title">
+    {% if post.title %}
+      <a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    {% elsif page.title %}
+      <a title="Permalink to {{ page.title }}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+    {% endif %}
+  </h1>
+  <ul class="post-meta">
+    {% if post.date %}
+      <li>{{ post.date | date: "%B %-d, %Y" }}</li>
+    {% elsif page.date %}
+      <li>{{ page.date | date: "%B %-d, %Y" }}</li>
+    {% endif %}
+
+    {% if post.updated %}
+      <li>Updated: {{ post.date_time_updated_html | timeago }}</li>
+    {% elsif page.updated %}
+      <li>Updated: {{ page.date_time_updated_html | timeago }}</li>
+    {% endif %}
+
+    {% if page.meta %} <li>{{ page.meta }}</li> {% endif %}
+
+    {% if site.readtime_display %}
+      <li class="readtime" title"Estimated reading time">
+        {% if site.readtime_title == "icon" %}
+          <span class="readtime-title fa fa-clock-o">
+        {% else %}
+          <span class="readtime-title">{{ site.readtime_title }}
+        {% endif %}
+        </span>
+        {% if content %}
+          {% assign readtime = content | reading_time %}
+        {% elsif post.content %}
+          {% assign readtime = post.content | reading_time %}
+        {% endif %}
+        about {{ readtime | apnumber }} minute{% unless readtime == 1 %}s{% endunless %}
+      </li>
+    {% endif %}
+  </ul>
+</header>
