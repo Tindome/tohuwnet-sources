@@ -9,9 +9,73 @@ baseurl: ''
 url: "https://tohuw.net"
 timezone: America/New_York
 
-# Social settings
+# Metadata
+language: en
+author: Ron Scott-Adams
+subtitle: Blinkenlights, Virtualization, & Yak Shaving
+
+# Menu
+menuicons: true
+menuitem_articles: true
+menuitem_tags: true
+menuitem_social: true
+
+# Search
+search_enabled: true
+search_placeholder: "&#xf002;"
+
+# Categories
+categories_display: false
+category_archive:
+  layout: category_archive
+  path: topic
+  slugify: true
+
+# Tags
+tag_page_layout: tag_page
+tag_page_dir: tag
+tag_permalink_style: pretty
+ignored_tags:
+
+# Social
+social_title:
+rss_title: icon
+twitter_title: icon
 twitter_username: tohuw
+linkedin_title: icon
+linkedin_username: tohuw
+github_title: icon
 github_username:  tohuw
+facebook_title: icon
+facebook_username: tohuw
+disqus_shortname:
+
+# Recent Posts List
+recentposts_display: true
+recentposts_title: More, Here
+recentposts_count: 3
+
+# Blogroll
+blogroll_title: More, Elsewhere
+blogroll_footer_count: 6
+blogroll:
+    - name: RoundTower Blog
+      subtitle: Interesting reading from my stellar employer
+      url: http://www.roundtower.com/blog/
+    - name: HighExecutive.Net
+      subtitle: Ruminations of my illustrious wife
+      url: http://highexecutive.net
+    - name: Yellow Bricks
+      subtitle: A VMware CTO with great, usable thoughts
+      url: http://yellow-bricks.com
+    - name: Dadhacker
+      subtitle: Atari, Apple, Microsoft... He's seen some things
+      url: http://dadhacker.com
+    - name: Cormac Hogan
+      subtitle: Software-Defined Storage Guru Extraordinaire
+      url: http://cormachogan.com
+    - name: Punching Clouds
+      subtitle: Virtualization and cloud stuff from a VMware Architect
 
 # Front Matter Defaults
 defaults:
@@ -28,6 +92,15 @@ defaults:
     values:
       layout: "pages"
 
+# Readtime
+readtime_display: true
+readtime_title: icon
+
+# License
+license_display: true
+license_title: "CC BY-NC-SA 4.0"
+license_url: https://tohuw.net/rights/
+
 # Build settings
 markdown: kramdown
 destination: ../tohuw.github.io
@@ -36,3 +109,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 permalink: /articles/:title
+post_ext: md
+page_ext: html
+
+# Analytics
+# piwik_url: https://tohuw.net/stats
+# piwik_siteid: 1
