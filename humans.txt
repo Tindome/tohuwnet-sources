@@ -14,6 +14,10 @@
 
 # TECHNOLOGY COLOPHON
 
-    Jekyll
+    Jekyll + plugins (see Gemfile in source)
     Sass + Bourbon, CSS3, H5BP + HTML5
-    jQuery, Modernizr, Normalize.css, Lunr
+    jQuery, Normalize.css, Lunr
+
+# SOURCE
+
+    https://github.com/tohuw/tohuwnet-sources

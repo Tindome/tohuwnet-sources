@@ -3,32 +3,30 @@ source 'https://rubygems.org'
 gem 'jekyll', '>= 3.1.3'
 
 group :jekyll_plugins do
-  gem 'octopress-minify-html', '>= 1.3.1'
+  gem 'autoprefixer-rails', '>= 6.3.6'
+  gem 'jekyll-assets', '>= 2.2.5'
+  gem 'jekyll-feed', '>= 0.5.1'
+  gem 'jekyll-redirect-from', '>= 0.10.0'
   gem 'jekyll-tagging', '>= 1.0.1'
   gem 'jekyll_version_plugin', '>= 1.0.2'
   gem 'liquid_pluralize', '>= 1.0.1'
   gem 'liquid_reading_time', '>= 1.1.1'
-  gem 'octopress-quote-tag', '>= 1.0.4'
-  gem 'octopress-pullquote-tag', '>= 1.0.1'
-  gem 'octopress-gist', '>= 1.3.5'
   gem 'octopress-date-format', '>= 3.0.3'
-  gem 'octopress-autoprefixer', '>= 2.0.0'
-  gem 'octopress-social', '>= 1.4.5'
-  gem 'jekyll-feed', '>= 0.5.1'
-  gem 'jekyll-redirect-from', '>= 0.10.0'
-  gem 'font-awesome-sass', '>= 4.6.2'
-  gem 'autoprefixer-rails', '>= 6.3.6'
+  gem 'octopress-gist', '>= 1.3.5'
+  gem 'octopress-minify-html', '>= 1.3.1'
+  gem 'octopress-pullquote-tag', '>= 1.0.1'
+  gem 'octopress-quote-tag', '>= 1.0.4'
 end
 
 group :css do
+  gem 'bitters', '>= 1.3.1'
   gem 'bourbon', '>= 5.0.0.beta.5'
   gem 'neat', '>= 1.7.4'
-  gem 'bitters', '>= 1.3.1'
 end
 
 group :test do
-  gem 'rubocop', '>=  0.39.0'
   gem 'html-proofer', '>= 3.0.5'
+  gem 'rubocop', '>=  0.39.0'
   gem 'scss_lint', '>= 0.48.0'
 end
 

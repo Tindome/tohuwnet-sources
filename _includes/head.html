@@ -6,8 +6,6 @@
   <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
   <meta name="description" content="{% if page.summary %}{{ page.summary | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  {% stylesheet main %}
   <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-  {% twitter_script_tag %}
-  <script src="javascripts/bundle.js"></script>
-  <!-- {{ 'css:bundle.css "js:bundle.js async:true"' | jekyll_asset_multi }} -->
 </head>

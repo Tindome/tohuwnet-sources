@@ -4,17 +4,9 @@
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
  * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Modifications made by Ron Scott-Adams to remove most opinionated styles
  */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
-html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -25,12 +17,10 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
@@ -90,26 +80,6 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -183,23 +153,6 @@ textarea {
 
 .clearfix:after {
     clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================

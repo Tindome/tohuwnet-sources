@@ -23,10 +23,11 @@
   {% endfor %}
 
   {% if page.comments %}
-    <!-- {% capture permalink %}{{ site.url }}{{ page.url }}{% endcapture %} -->
+    {% capture permalink %}{{ site.url }}{{ page.url }}{% endcapture %}
     <div class="comments">
-      <!-- <div class="twitter-share">{% if site.twitter_username %}Discuss on Twitter: <a href="https://twitter.com/share" class="twitter-share-button" data-via="Tohuw" data-size="default" data-dnt="true">Share on Twitter</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>{% endif %}</div> -->
-      {% tweet_button %}
+      <div class="twitter-share">
+        {% if site.twitter_username %}Discuss on Twitter: <a href="https://twitter.com/share" class="twitter-share-button" data-via="Tohuw" data-size="default" data-dnt="true">Share on Twitter</a>{% endif %}
+      </div>
     </div>
   {% endif %}
 </footer>

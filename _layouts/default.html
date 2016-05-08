@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html>
   {% include head.html %}
@@ -10,12 +13,14 @@
     {% include siteheader.html %}
 
     {% include menu.html %}
-    
+
     <div class="mainbody">
       {{ content }}
     </div>
 
     {% include sitefooter.html %}
+
+    {% javascript main %}
   </body>
 
 </html>
