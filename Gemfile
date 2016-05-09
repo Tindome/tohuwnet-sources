@@ -14,6 +14,7 @@ group :jekyll_plugins do
   gem 'octopress-gist', '>= 1.3.5'
   gem 'octopress-pullquote-tag', '>= 1.0.1'
   gem 'octopress-quote-tag', '>= 1.0.4'
+  gem 'jekyll-seo-tag', '>= 1.4.0'
   gem 'jekyll-sitemap', '>= 0.10.0'
 end
 
