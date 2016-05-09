@@ -23,6 +23,14 @@ aside {
       @include omega();
       clear: both;
     };
+
+    h3 {
+      font-size: $base-font-size * .9;
+    }
+
+    a.readmore {
+      font-size: $base-font-size * .8;
+    }
   }
 
   &.blogroll {
@@ -45,8 +53,8 @@ aside {
 p.site-info {
   @include span-columns(9.25);
   @include shift(.5);
-  @include media('<large') { font-size: $base-font-size * .7; }
-  font-size: $base-font-size * .9;
+  @include media('<large') { font-size: $base-font-size * .6; }
+  font-size: $base-font-size * .7;
 }
 
 span.license {
@@ -56,6 +64,6 @@ span.license {
     display: block
   };
 
-  @include media('<large') { font-size: $base-font-size * .7; }
-  font-size: $base-font-size * .9;
+  @include media('<large') { font-size: $base-font-size * .6; }
+  font-size: $base-font-size * .7;
 }

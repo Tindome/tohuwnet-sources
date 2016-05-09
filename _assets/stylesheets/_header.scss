@@ -9,14 +9,6 @@ header.site-header {
     margin-bottom: 0;
   }
 
-  #menu {
-    @include span-columns(1);
-    margin-top: 5rem;
-    background: none;
-    font-size: $base-font-size * 1.33;
-    color: text-color(dark);
-  }
-
   div.headers {
     @include span-columns (11);
 

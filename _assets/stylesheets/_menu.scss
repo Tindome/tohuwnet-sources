@@ -1,0 +1,65 @@
+// Based on code by Diego Eis
+
+.sliding-panel-button {
+  @include span-columns(1);
+  margin-top: 5px;
+  background: none;
+  font-size: $base-font-size * 1.33;
+  color: text-color(dark);
+
+  &:hover {
+    background-color: transparent;
+    color: text-color(dark);
+  }
+}
+
+.sliding-panel-content {
+  @include span-columns(2.5);
+  @include media('<large') { min-width: 50%; }
+  @include media('<medium') { min-width: 100%; }
+  @include position(fixed, 0 auto 0 0);
+  height: 100%;
+  transform: translateX(-100%);
+  transition: all 0.25s linear;
+  box-shadow: .5rem 0 .33rem -.25rem rgba(0, 0, 0, 0.26);
+  background-color: $primary-color;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  z-index: 999999;
+
+  &.is-visible {
+    transform: translateX(0);
+  }
+}
+
+.sliding-panel-fade-screen {
+  @include position(fixed, 0 0 0 0);
+  transition: all 0.25s linear;
+  background: #000;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+
+  &.is-visible {
+    opacity: 0.4;
+    visibility: visible;
+  }
+}
+
+.sliding-panel-close {
+  cursor: pointer;
+}
+
+nav.site-nav {
+  @include shift(1);
+  font-size: $base-font-size * 1.33;
+
+  a {
+    text-transform: lowercase;
+
+    &.fa:before {
+      padding-right: .5rem;
+      font-size: $base-font-size;
+    }
+  }
+}

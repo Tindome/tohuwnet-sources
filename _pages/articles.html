@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1>Recent Articles</h1>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    <li>
+      <h2><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+      <ul class="post-meta">
+        <li>{{ post.date | date: "%B %-d, %Y" }}</li>
+        {% if site.disqus_shortname %} <li>{% include disqus_count.html %}</li> {% endif %}
+      </ul>
+    </li>
+  {% endfor %}
+</ul>
