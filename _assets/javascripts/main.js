@@ -1,7 +1,7 @@
 //= require vendor/jquery.js
 //= require vendor/lunr.js
 //= require vendor/search.js
-//= require vendor/bigfoot.js
+//= require vendor/littlefoot.js
 //= require vendor/twitter.js
 
 // Avoid 'console' errors in browsers that lack a console.

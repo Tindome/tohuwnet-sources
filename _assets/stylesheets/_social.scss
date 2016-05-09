@@ -1,0 +1,52 @@
+ul.social {
+  @include span-columns(2.25);
+  @include media('<large') { display: none };
+  font-size: $base-font-size * 1.33;
+
+  li {
+    display: inline-block;
+    margin-right: .5rem;
+  }
+
+  a {
+    color: text-color(light);
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  .fa-rss {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fa9d4a;
+    }
+  }
+
+  .fa-twitter {
+    &:hover,
+    &:active,
+    &:focus {
+      color: #55acee;
+    }
+  }
+
+  .fa-github {
+    &:hover,
+    &:active,
+    &:focus {
+      color: color(black);
+    }
+  }
+
+  .fa-linkedin {
+    &:hover,
+    &:active,
+    &:focus {
+      color: color(black);
+    }
+  }
+}

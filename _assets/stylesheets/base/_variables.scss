@@ -1,13 +1,19 @@
 // Breakpoints
-$medium-screen: 600px;
-$large-screen: 900px;
+// Uses include-media (http://include-media.com)
+$breakpoints: (
+  'x-small': 320px,
+  'small':   375px,
+  'medium':  640px,
+  'large':   768px,
+  'x-large': 1080px
+) !default;
 
 // Typography
-$base-font-family: $font-stack-system;
-$heading-font-family: $base-font-family;
+$base-font-family:    'MavenPro';
+$heading-font-family: 'MavenPro Medium';
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.8em;
 
 // Line height
 $base-line-height: 1.5;
@@ -19,19 +25,23 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
-// Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
-
-// Font Colors
-$base-font-color: $dark-gray;
-$action-color: $blue;
+// Scheme Choices
+// For the colors, try http://www.materialpalette.com and check _palette.scss
+$base-background-color:    color(white);
+$base-font-color:          text-color(dark, primary);
+$primary-color:            color(grey, lighten-4);
+$primary-alternate1-color: color(grey, lighten-3);
+$primary-alternate2-color: color(grey, darken-2);
+$accent-color:             color(light-blue, accent-4);
+$accent-fallback1-color:   color(light-blue, accent-1);
+$accent-fallback2-color:   color(light-blue, accent-2);
+$action-color:             $accent-color;
+$action-alternate-color:   $accent-fallback1-color;
 
 // Border
-$base-border-color: $light-gray;
-$base-border: 1px solid $base-border-color;
+$divider-color:     adjust-color(color(black), $alpha: -.88);
+$base-border-color: $divider-color;
+$base-border:       1px solid $base-border-color;
 
 // Background Colors
 $base-background-color: #fff;
