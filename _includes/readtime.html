@@ -1,0 +1,7 @@
+{% if content %}
+  {% assign readtime = content | reading_time %}
+{% elsif post.content %}
+  {% assign readtime = post.content | reading_time %}
+{% endif %}
+{% if readtime == 1 %}less than a minute
+{% else %}about {{ readtime | apnumber }} minute{% unless readtime == 1 %}s{% endunless %}{% endif %}

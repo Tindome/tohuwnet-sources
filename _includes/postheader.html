@@ -22,19 +22,15 @@
     {% if page.meta %} <li>{{ page.meta }}</li> {% endif %}
 
     {% if site.readtime_display %}
-      <li class="readtime" title"Estimated reading time">
+      <li class="readtime has-tooltip">
+        <span class="tooltip-text">Estimated reading time</span>
         {% if site.readtime_title == "icon" %}
           <span class="readtime-title fa fa-clock-o">
         {% else %}
           <span class="readtime-title">{{ site.readtime_title }}
         {% endif %}
         </span>
-        {% if content %}
-          {% assign readtime = content | reading_time %}
-        {% elsif post.content %}
-          {% assign readtime = post.content | reading_time %}
-        {% endif %}
-        about {{ readtime | apnumber }} minute{% unless readtime == 1 %}s{% endunless %}
+        {% include readtime.html %}
       </li>
     {% endif %}
   </ul>

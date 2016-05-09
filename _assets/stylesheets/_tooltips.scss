@@ -1,0 +1,9 @@
+.has-tooltip {
+  span.tooltip-text {
+    display: none;
+  }
+
+  &:hover span.tooltip-text {
+    display: block;
+  }
+}

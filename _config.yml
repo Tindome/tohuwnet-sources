@@ -1,4 +1,4 @@
-# Site settings
+# Base Settings
 title: Tohuw.Net
 email: ron@tohuw.net
 description: >
@@ -26,10 +26,6 @@ search_placeholder: "&#xf002;"
 
 # Categories
 categories_display: false
-category_archive:
-  layout: category_archive
-  path: topic
-  slugify: true
 
 # Tags
 tag_page_layout: tag_page
@@ -87,7 +83,7 @@ defaults:
     values:
       layout: "page"
 
-# Readtime
+# Layout: readtime
 readtime_display: true
 readtime_title: icon
 
@@ -101,35 +97,23 @@ license_url: https://tohuw.net/rights/
 # piwik_siteid: 1
 
 # Build settings
-markdown: kramdown
 destination: ../tohuw.github.io
 include:
   - /_pages
 exclude:
   - README.md
+  - LICENSE.md
   - Gemfile
   - Gemfile.lock
 permalink: /articles/:title
-post_ext: md
-page_ext: html
-sass:
-  sass_dir: _sass
-  style: compressed
+
+# Layout: compress
 compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
   ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
+    envs: [development]
 
 # Plugin: jekyll-assets
+cache: false
 assets:
-  compress:
-    css: sass
-    js: uglifier
-  prefix: "/assets"
   autoprefixer:
     browsers: ["last 2 versions","> 5%","IE 9"]

@@ -1,6 +1,9 @@
-// lunr - http://lunrjs.com
-// A bit like Solr, but much smaller and not as bright - 0.7.0
-// Copyright (C) 2016 Oliver Nightingale - MIT Licensed - @license
+/**
+ * lunr - http://lunrjs.com - A bit like Solr, but much smaller and not as bright - 0.7.0
+ * Copyright (C) 2016 Oliver Nightingale
+ * MIT Licensed
+ * @license
+ */
 
 ;(function(){
 

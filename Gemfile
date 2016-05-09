@@ -9,13 +9,12 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', '>= 0.10.0'
   gem 'jekyll-tagging', '>= 1.0.1'
   gem 'jekyll_version_plugin', '>= 1.0.2'
-  gem 'liquid_pluralize', '>= 1.0.1'
   gem 'liquid_reading_time', '>= 1.1.1'
-  gem 'octopress-date-format', '>= 3.0.3'
+  gem 'mini_magick', '>= 4.5.1'
   gem 'octopress-gist', '>= 1.3.5'
-  gem 'octopress-minify-html', '>= 1.3.1'
   gem 'octopress-pullquote-tag', '>= 1.0.1'
   gem 'octopress-quote-tag', '>= 1.0.4'
+  gem 'jekyll-sitemap', '>= 0.10.0'
 end
 
 group :css do
@@ -30,8 +29,9 @@ group :test do
   gem 'scss_lint', '>= 0.48.0'
 end
 
-# This is a group containing base gems used on my OS X systems.
-# The project does not really depend on them.
+# This is a group containing base gems used on my OS X systems
+# The project does not really depend on them, except where they happen
+# to be dependencies of the above gems
 group :stock do
   gem 'bigdecimal', '>= 1.2.8'
   gem 'bundle', '>= 0.0.1'
