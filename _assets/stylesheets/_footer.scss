@@ -1,0 +1,61 @@
+footer.site-footer {
+  @include outer-container();
+  clear: both;
+  max-width: none;
+  box-shadow: 0 -.25rem .33rem rgba(0, 0, 0, 0.26);
+  padding-top: 2rem;
+  background-color: $primary-alternate2-color;
+  color: text-color(light);
+
+  a {
+    color: $action-alternate-color;
+  }
+}
+
+aside {
+  margin-bottom: 1.5rem;
+
+  &.recentposts {
+    @include span-columns(6);
+    @include shift(.5);
+    @include media('<medium') {
+      @include shift(1);
+      @include omega();
+      clear: both;
+    };
+  }
+
+  &.blogroll {
+    @include span-columns(5);
+    @include media('<medium') {
+      @include shift(1);
+      @include omega();
+      clear: both;
+    };
+
+    span.subtitle {
+      &::before { content: ' - '; }
+      @include media('<large') { font-size: $base-font-size * .8 };
+      @include media('<medium') { display: none };
+      font-size: $base-font-size * .9;
+    }
+  }
+}
+
+p.site-info {
+  @include span-columns(9.25);
+  @include shift(.5);
+  @include media('<large') { font-size: $base-font-size * .7; }
+  font-size: $base-font-size * .9;
+}
+
+span.license {
+  &::before { content: "\\\\ "; }
+  @include media('<medium') {
+    &::before { content: ''; }
+    display: block
+  };
+
+  @include media('<large') { font-size: $base-font-size * .7; }
+  font-size: $base-font-size * .9;
+}
