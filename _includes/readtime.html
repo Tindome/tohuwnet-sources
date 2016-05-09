@@ -11,8 +11,8 @@
     <span class="readtime-title">{{ site.readtime_title }}
   {% endif %}
   </span>
-  
-  {{% if content %}
+
+  {% if content %}
     {% assign readtime = content | reading_time %}
   {% elsif post.content %}
     {% assign readtime = post.content | reading_time %}

@@ -113,7 +113,7 @@ compress_html:
     envs: [development]
 
 # Plugin: jekyll-assets
-cache: false
 assets:
+  cache: false
   autoprefixer:
     browsers: ["last 2 versions","> 5%","IE 9"]
