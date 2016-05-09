@@ -21,17 +21,6 @@
 
     {% if page.meta %} <li>{{ page.meta }}</li> {% endif %}
 
-    {% if site.readtime_display %}
-      <li class="readtime has-tooltip">
-        <span class="tooltip-text">Estimated reading time</span>
-        {% if site.readtime_title == "icon" %}
-          <span class="readtime-title fa fa-clock-o">
-        {% else %}
-          <span class="readtime-title">{{ site.readtime_title }}
-        {% endif %}
-        </span>
-        {% include readtime.html %}
-      </li>
-    {% endif %}
+    {% if site.readtime_display %} {% include readtime %} {% endif %}
   </ul>
 </header>
