@@ -3,6 +3,7 @@
 //= require vendor/search.js
 //= require vendor/littlefoot.js
 //= require vendor/twitter.js
+//= require vendor/disqus_count.js
 
 // Avoid 'console' errors in browsers that lack a console.
 (function() {

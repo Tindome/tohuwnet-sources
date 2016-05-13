@@ -25,7 +25,20 @@ textarea {
   font-size: $base-font-size;
 }
 
-#{$all-text-inputs},
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select[multiple=multiple],
 select[multiple] {
   background-color: $base-background-color;
   border: $base-border;

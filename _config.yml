@@ -45,7 +45,7 @@ github_title: icon
 github_username:  tohuw
 facebook_title: icon
 facebook_username: tohuw
-disqus_shortname:
+disqus_shortname: tohuw
 
 # Recent Posts List
 recentposts_display: true
@@ -67,6 +67,7 @@ blogroll:
       url: http://cormachogan.com
     - name: Punching Clouds
       subtitle: Virtualization and cloud stuff from a VMware Architect
+      url: http://punchingclouds.com
 
 # Front Matter Defaults
 defaults:
@@ -115,6 +116,6 @@ compress_html:
 # Plugin: jekyll-assets
 assets:
   cache: false
-  digest: false
+  digest: true
   autoprefixer:
     browsers: ["last 2 versions","> 5%","IE 9"]

@@ -4,7 +4,7 @@
   <!-- <div class="sliding-panel-close">Close Panel</div> -->
   <div class="search">
     <form action="get" id="search_form">
-      <input type="text" id="search_box" class="fa" title="Search this site" placeholder="{{ site.search_placeholder }}" autocomplete="off">
+      <input type="search" id="search_box" class="fa" title="Search this site" placeholder="{{ site.search_placeholder }}" autocomplete="off">
     </form>
     <div id="search-results">
       <span class="close-button"></span>
@@ -23,7 +23,7 @@
         {% endif %}
       {% endfor %}
       {% if site.menuitem_social %}
-        {% if site.rss_title %}<li><a href="{{ site.baseurl }}{{ plugins.feeds.permalinks.main_feed }}" class="fa fa-rss">Feeds</a></li>{% endif %}
+        {% if site.rss_title %}<li><a href="{{ site.baseurl }}/feed.xml" class="fa fa-rss">Subscribe</a></li>{% endif %}
         {% if site.twitter_username %}<li><a {% if site.menuicons %}class="fa fa-twitter"{% endif %} href="https://twitter.com/{{ site.twitter_username }}" target="twitter-{{ site.twitter_username }}">Twitter</a></li>{% endif %}
         {% if site.github_username %}<li><a {% if site.menuicons %}class="fa fa-github"{% endif %} href="https://github.com/{{ site.github_username }}" target="github-{{ site.github_username }}">GitHub</a></li>{% endif %}
         {% if site.linkedin_username %}<li><a {% if site.menuicons %}class="fa fa-linkedin"{% endif %} href="https://linkedin.com/in/{{ site.linkedin_username }}" target="linkedin-{{ site.linkedin_username }}">LinkedIn</a></li>{% endif %}

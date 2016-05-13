@@ -2,8 +2,8 @@
 
 .sliding-panel-button {
   @include span-columns(1);
-  margin-top: 5px;
   background: none;
+  padding: .5em 0 0 0;
   font-size: $base-font-size * 1.33;
   color: text-color(dark);
 
@@ -52,6 +52,7 @@
 
 nav.site-nav {
   @include shift(1);
+  margin-top: 2rem;
   font-size: $base-font-size * 1.33;
 
   a {

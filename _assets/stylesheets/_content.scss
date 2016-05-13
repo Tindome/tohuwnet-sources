@@ -4,6 +4,7 @@ div.mainbody {
   @include margin(2rem null 2rem null);
   height: 100%;
   min-height: 80vh;
+  margin-bottom: 15vh;
 
   p {
     clear: left;
