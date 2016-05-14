@@ -11,24 +11,28 @@
 
   .tooltip {
     @include position(absolute, null 0 3rem);
-    transition: all 0.2s ease-in-out;
     background-color: $primary-alternate1-color;
+    font-size: $base-font-size * .6;
     margin-left: -4rem;
     opacity: 0;
     text-align: center;
+    transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
     visibility: hidden;
     width: 12em;
     z-index: 10;
-    font-size: $base-font-size * .6;
+
+    &::after {
+      @include position(absolute, null 0 null);
+      bottom: -1em;
+      color: $primary-alternate1-color;
+      content: '▼';
+      font-size: 1.4em;
+      text-align: center;
+    }
   }
 
-  .tooltip::after {
-    @include position(absolute, null 0 null);
-    bottom: -1em;
-    color: $primary-alternate1-color;
-    content: "▼";
-    font-size: 1.4em;
-    text-align: center;
+  &.readtime .tooltip {
+    margin-left: 2rem;
   }
 
   .tooltip-content {
@@ -37,9 +41,6 @@
 }
 
 // Special Tooltips
-.readtime .tooltip {
-  margin-left: 2rem;
-}
 
 .tags .tooltip {
   bottom: 4rem;
