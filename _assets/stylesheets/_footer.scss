@@ -1,11 +1,11 @@
-footer.site-footer {
-  @include outer-container();
-  clear: both;
-  max-width: none;
-  box-shadow: 0 -.25rem .33rem rgba(0, 0, 0, 0.26);
-  padding-top: 2rem;
+.site-footer {
+  @include outer-container;
   background-color: $primary-alternate2-color;
+  box-shadow: 0 -.25rem .33rem rgba(0, 0, 0, .26);
+  clear: both;
   color: text-color(light);
+  max-width: none;
+  padding-top: 2rem;
 
   a {
     color: $action-alternate-color;
@@ -20,7 +20,7 @@ aside {
     @include shift(.5);
     @include media('<medium') {
       @include shift(1);
-      @include omega();
+      @include omega;
       clear: both;
     };
 
@@ -28,7 +28,7 @@ aside {
       font-size: $base-font-size * .9;
     }
 
-    a.readmore {
+    .readmore {
       font-size: $base-font-size * .8;
     }
   }
@@ -37,32 +37,32 @@ aside {
     @include span-columns(5);
     @include media('<medium') {
       @include shift(1);
-      @include omega();
+      @include omega;
       clear: both;
     };
 
-    span.subtitle {
+    .subtitle {
       &::before { content: ' - '; }
-      @include media('<large') { font-size: $base-font-size * .8 };
-      @include media('<medium') { display: none };
+      @include media('<large') { font-size: $base-font-size * .8; }
+      @include media('<medium') { display: none; }
       font-size: $base-font-size * .9;
     }
   }
 }
 
-p.site-info {
+.site-info {
   @include span-columns(9.25);
   @include shift(.5);
   @include media('<large') { font-size: $base-font-size * .6; }
   font-size: $base-font-size * .7;
 }
 
-span.license {
-  &::before { content: "\\\\ "; }
+.license {
+  &::before { content: '\\\\ '; }
   @include media('<medium') {
     &::before { content: ''; }
-    display: block
-  };
+    display: block;
+  }
 
   @include media('<large') { font-size: $base-font-size * .6; }
   font-size: $base-font-size * .7;

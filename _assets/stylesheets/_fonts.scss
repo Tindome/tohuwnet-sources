@@ -1,6 +1,6 @@
-$fonts_dir: "../fonts" !default;
+$fonts-dir: '../fonts' !default;
 
-@include webfont-face("MavenPro", "#{$fonts_dir}/mavenpro/maven_pro_regular-webfont");
-@include webfont-face("MavenPro", "#{$fonts_dir}/mavenpro/maven_pro_bold-webfont", bold);
-@include webfont-face("MavenPro Medium", "#{$fonts_dir}/mavenpro/maven_pro_medium-webfont");
-@include webfont-face("MavenPro Black", "#{$fonts_dir}/mavenpro/maven_pro_black-webfont");
+@include webfont-face('MavenPro', '#{$fonts-dir}/mavenpro/maven_pro_regular-webfont');
+@include webfont-face('MavenPro', '#{$fonts-dir}/mavenpro/maven_pro_bold-webfont', bold);
+@include webfont-face('MavenPro Medium', '#{$fonts-dir}/mavenpro/maven_pro_medium-webfont');
+@include webfont-face('MavenPro Black', '#{$fonts-dir}/mavenpro/maven_pro_black-webfont');

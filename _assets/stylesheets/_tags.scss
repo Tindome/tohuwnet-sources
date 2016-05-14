@@ -1,32 +1,32 @@
-ul.tags {
+.tags {
   li {
     @include padding(.25rem .5rem);
-    display: inline-block;
-    margin-right: 1rem;
+    background-color: $accent-color;
     border: 1px solid $divider-color;
     border-radius: 5px;
-    background-color: $accent-color;
+    display: inline-block;
+    margin-right: 1rem;
 
     a {
-      font-size: $base-font-size * .9;
       color: text-color(light);
+      font-size: $base-font-size * .9;
     }
   }
 }
 
-div.tag-cloud {
-  margin-top: 1rem;
+.tag-cloud {
   border-top: 1px solid $divider-color;
+  margin-top: 1rem;
 
   a {
     @include margin(1rem 1rem null null);
     @include padding(.25rem .5rem);
-    display: inline-block;
+    background-color: $accent-color;
     border: 1px solid $divider-color;
     border-radius: 5px;
-    background-color: $accent-color;
-    font-size: $base-font-size * .9;
     color: text-color(light);
+    display: inline-block;
+    font-size: $base-font-size * .9;
 
     &.set-1 { font-size: $base-font-size; }
     &.set-2 { font-size: $base-font-size * 1.2; }
@@ -36,9 +36,9 @@ div.tag-cloud {
   }
 }
 
-ul.tag-page {
+.tag-page {
   padding-left: 1rem;
 
-  a.post-link { font-size: $base-font-size * 1.2; }
-  span.meta { color: text-color(dark, secondary); }
+  .post-link { font-size: $base-font-size * 1.2; }
+  .meta { color: text-color(dark, secondary); }
 }

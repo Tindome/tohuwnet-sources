@@ -1,10 +1,10 @@
-div.mainbody {
+.mainbody {
   @include span-columns(10);
   @include shift(1);
   @include margin(2rem null 2rem null);
   height: 100%;
-  min-height: 80vh;
   margin-bottom: 15vh;
+  min-height: 80vh;
 
   p {
     clear: left;
@@ -17,9 +17,9 @@ div.mainbody {
 
   blockquote {
     border-left: 5px solid $divider-color;
-    padding-left: .5rem;
-    font-style: italic;
     color: text-color(dark, secondary);
+    font-style: italic;
+    padding-left: .5rem;
   }
 
   ul:not(.tags) {
@@ -30,14 +30,14 @@ div.mainbody {
 
       &::before {
         @extend .fa;
-        padding-right: .25rem;
-        content: ('\f0da');
         color: text-color(dark, icon);
+        content: ('\f0da');
+        padding-right: .25rem;
       }
     }
   }
 
-  ul.post-meta {
+  .post-meta {
     display: inline-block;
     font-size: $base-font-size * .9;
 
@@ -59,30 +59,30 @@ div.mainbody {
       }
     }
 
-    span.readtime-title.fa { color: text-color(dark, icon); }
+    .readtime-title.fa { color: text-color(dark, icon); }
   }
 
-  header.post-header ul.post-meta {
+  .post-header ul.post-meta {
     @include margin(0 null 1rem null);
     border-bottom: 1px solid $divider-color;
   }
 
-  ul.post-list li h2 {
+  .post-list li h2 {
     display: inline-block;
   }
 
-  footer.post-footer {
+  .post-footer {
     border-top: 1px solid $divider-color;
     padding-top: 1rem;
   }
 
-  div.comments {
+  .comments {
     margin-top: 1rem;
 
-    div.twitter-share {
+    .twitter-share {
+      font-weight: bold;
       margin-bottom: 1rem;
       text-align: center;
-      font-weight: bold;
     }
   }
 }

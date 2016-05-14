@@ -9,6 +9,10 @@
     visibility: visible;
   }
 
+  .tooltip-content {
+    margin-bottom: 0;
+  }
+
   .tooltip {
     @include position(absolute, null 0 3rem);
     background-color: $primary-alternate1-color;
@@ -38,9 +42,5 @@
 
   &.tags .tooltip {
     bottom: 4rem;
-  }
-
-  .tooltip-content {
-    margin-bottom: 0;
   }
 }

@@ -1,15 +1,15 @@
-header.site-header {
+.site-header {
   @include outer-container(100%);
-  padding-bottom: .5rem;
   background-color: $primary-color;
-  box-shadow: 0 .25rem .33rem rgba(0, 0, 0, 0.26);
+  box-shadow: 0 .25rem .33rem rgba(0, 0, 0, .26);
   color: text-color(dark);
+  padding-bottom: .5rem;
 
   * {
     margin-bottom: 0;
   }
 
-  div.headers {
+  .headers {
     @include span-columns (11);
 
     * {
@@ -17,7 +17,7 @@ header.site-header {
     }
   }
 
-  h1.site-title {
+  .site-title {
     font-size: $base-font-size * 2;
 
     a {
@@ -25,12 +25,12 @@ header.site-header {
     }
   }
 
-  h2.site-subtitle {
+  .site-subtitle {
     @include media('<x-large') { font-size: $base-font-size; }
     @include media('<medium') { display: none; }
     @include margin(1rem null null 1.5rem);
+    color: text-color(dark, secondary);
     font-size: $base-font-size * 1.5;
     font-weight: normal;
-    color: text-color(dark, secondary);
   }
 }

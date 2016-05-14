@@ -27,15 +27,15 @@ jQuery(function() {
   });
 
   // Event when the form is submitted
-  $("#search_form").submit(function(){
+  $(".search_form").submit(function(){
       event.preventDefault();
-      var query = $("#search_box").val(); // Get the value for the text field
+      var query = $(".search_box").val(); // Get the value for the text field
       var results = window.idx.search(query); // Get lunr to perform a search
       display_search_results(results); // Hand the results off to be displayed
   });
 
   function display_search_results(results) {
-    var $search_results = $("#search-results-list");
+    var $search_results = $(".search-results-list");
 
     // Wait for data to load
     window.data.then(function(loaded_data) {
@@ -43,7 +43,7 @@ jQuery(function() {
       // Are there any results?
       if (results.length) {
         // Populate the results counter text
-        $(".results-count").text("\"" + $("#search_box").val() + "\": " + results.length + " result");
+        $(".results-count").text("\"" + $(".search_box").val() + "\": " + results.length + " result");
         if (results.length > 1) {
             // Pluralize "results"
             $(".results-count").text($(".results-count").text() + "s");
@@ -64,7 +64,7 @@ jQuery(function() {
         });
 
       } else {
-        $(".results-count").text("\"" + $("#search_box").val() + "\": " + "no results");
+        $(".results-count").text("\"" + $(".search_box").val() + "\": " + "no results");
         $search_results.html('<li>No results found</li>');
       }
     });

@@ -1,6 +1,6 @@
-ul.social {
+.social {
   @include span-columns(2.25);
-  @include media('<large') { display: none };
+  @include media('<large') { display: none; }
   font-size: $base-font-size * .9;
 
   li {
