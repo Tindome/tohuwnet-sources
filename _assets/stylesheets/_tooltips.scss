@@ -31,17 +31,16 @@
     }
   }
 
+  // Special Tooltips
   &.readtime .tooltip {
     margin-left: 2rem;
+  }
+
+  &.tags .tooltip {
+    bottom: 4rem;
   }
 
   .tooltip-content {
     margin-bottom: 0;
   }
-}
-
-// Special Tooltips
-
-.tags .tooltip {
-  bottom: 4rem;
 }
