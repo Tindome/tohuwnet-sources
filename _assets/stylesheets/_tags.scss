@@ -3,7 +3,7 @@
     @include padding(.25rem .5rem);
     background-color: $accent-color;
     border: 1px solid $divider-color;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     display: inline-block;
     margin-right: 1rem;
 
@@ -23,7 +23,7 @@
     @include padding(.25rem .5rem);
     background-color: $accent-color;
     border: 1px solid $divider-color;
-    border-radius: 5px;
+    border-radius: $base-border-radius;
     color: text-color(light);
     display: inline-block;
     font-size: $base-font-size * .9;

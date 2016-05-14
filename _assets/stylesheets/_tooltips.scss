@@ -15,10 +15,12 @@
 
   .tooltip {
     @include position(absolute, null 0 3rem);
-    background-color: $primary-alternate1-color;
+    background-color: $base-background-color;
+    box-shadow: rgba(#000, .2) 0 3px 8px;
     font-size: $base-font-size * .6;
     margin-left: -4rem;
     opacity: 0;
+    padding: $small-spacing;
     text-align: center;
     transition: opacity .2s ease-in-out, visibility .2s ease-in-out;
     visibility: hidden;
@@ -28,7 +30,7 @@
     &::after {
       @include position(absolute, null 0 null);
       bottom: -1em;
-      color: $primary-alternate1-color;
+      color: $base-background-color;
       content: '▼';
       font-size: 1.4em;
       text-align: center;

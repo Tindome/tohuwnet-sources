@@ -25,7 +25,7 @@
   ul:not(.tags) {
     @include margin(1rem null);
 
-    li {
+    li:not(.post-list li):not(.post-meta li) {
       padding-left: 1rem;
 
       &::before {
@@ -67,8 +67,16 @@
     border-bottom: 1px solid $divider-color;
   }
 
-  .post-list li h2 {
-    display: inline-block;
+  .post-list {
+    li {
+      img {
+        border-radius: 100%;
+      }
+
+      h2 {
+        display: inline-block;
+      }
+    }
   }
 
   .post-footer {
