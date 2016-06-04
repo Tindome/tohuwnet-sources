@@ -5,13 +5,6 @@ layout: default
 
 <ul class="post-list">
   {% for post in site.posts %}
-    <li>
-      {% img '{{ image_path }}{{ post.thumbnail }}' magick:resize:100 alt:'Thumnail for post: {{ post.title }}' %}
-      <h2><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      <ul class="post-meta">
-        <li>{{ post.date | date: "%B %-d, %Y" }}</li>
-        {% if site.disqus_shortname %} <li>{% include disqus_count.html %}</li> {% endif %}
-      </ul>
-    </li>
+    {% include articlelist.html %}
   {% endfor %}
 </ul>

@@ -25,7 +25,7 @@
   ul:not(.tags) {
     @include margin(1rem null);
 
-    li:not(.post-list li):not(.post-meta li) {
+    li:not(.article-list-item):not(.post-meta li) {
       padding-left: 1rem;
 
       &::before {
@@ -38,6 +38,8 @@
   }
 
   .post-meta {
+    @include margin(0 null 1rem null);
+    border-bottom: 1px solid $divider-color;
     display: inline-block;
     font-size: $base-font-size * .9;
 
@@ -46,37 +48,20 @@
     }
 
     li {
-      @include padding(null .25rem);
-      color: text-color(dark, secondary);
+        @include padding(null .25rem);
+        color: text-color(dark, secondary);
 
-      &::before {
-        content: ('•');
-        padding-right: .25rem;
-      }
+        &::before {
+          content: ('•');
+          padding-right: .25rem;
+        }
 
-      &:first-child::before {
-        content: ('');
-      }
+        &:first-child::before {
+          content: ('');
+        }
     }
 
     .readtime-title.fa { color: text-color(dark, icon); }
-  }
-
-  .post-header ul.post-meta {
-    @include margin(0 null 1rem null);
-    border-bottom: 1px solid $divider-color;
-  }
-
-  .post-list {
-    li {
-      img {
-        border-radius: 100%;
-      }
-
-      h2 {
-        display: inline-block;
-      }
-    }
   }
 
   .post-footer {
@@ -92,5 +77,15 @@
       margin-bottom: 1rem;
       text-align: center;
     }
+  }
+}
+
+.article-list-item {
+  img {
+    border-radius: 100%;
+  }
+
+  h2 {
+    display: inline-block;
   }
 }
