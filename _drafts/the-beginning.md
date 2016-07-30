@@ -8,6 +8,5 @@ tags: miscellanea test2
 thumbnail: {{ image_path }}renstimpy-yakshaving.jpg
 comments: true
 ---
-I spent a terrible amount of time [Yak Shaving](http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html) to get this site built.
-
 {{ post.thumbnail }}
+I spent a terrible amount of time [Yak Shaving](http://projects.csail.mit.edu/gsb/old-archive/gsb-archive/gsb2000-02-11.html) to get this site built. There's a certain sickness that drives me to perpetual dissatisfaction with any given CMS or blog software. The general diagnosis provided is that I've a case of [NIH](https://en.m.wikipedia.org/wiki/Not_invented_here), but I object.
