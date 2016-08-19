@@ -12,7 +12,11 @@
             {% endif %}
           {% endunless %}
         {% endfor %}
-          <li><a class="readmore" href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}articles.html">More...</a></li>
+          {% capture postcount %}{{ site.posts | size }}{% endcapture %}
+          {% assign postcount = postcount | plus: 0 %}
+          {% if postcount > site.recentposts_count %}
+            <li><a class="readmore" href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}articles.html">More...</a></li>
+          {% endif %}
       </ul>
     </aside>
   {% endif %}

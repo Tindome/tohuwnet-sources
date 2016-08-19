@@ -28,6 +28,20 @@ aside {
       font-size: $base-font-size * .9;
     }
 
+    .post-meta li {
+      display: inline-block;
+      font-size: $base-font-size * .7;
+
+      &::before {
+        content: ('•');
+        padding-right: .25rem;
+      }
+
+      &:first-child::before {
+        content: ('');
+      }
+    }
+
     .readmore {
       font-size: $base-font-size * .8;
     }
