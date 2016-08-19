@@ -1,10 +1,10 @@
 module Jekyll
   # A tag for selecting random elements from an array
   class RandomSort < Liquid::Tag
-    Syntax = /(\w+[.]?\w+)\s+(\w+)/o
+    SYNTAX = /(\w+[.]?\w+)\s+(\w+)/o
 
     def initialize(tag_name, markup, tokens)
-      if markup =~ Syntax
+      if markup =~ SYNTAX
         @collection_name = $1
         @randomized_name = $2
       else

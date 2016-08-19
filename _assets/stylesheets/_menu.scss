@@ -6,7 +6,7 @@
   color: text-color(light, secondary);
   font-size: $base-font-size * 1.33;
   padding: .5em 0 0;
-  transition: color .5s linear;
+  transition: color .25s linear;
 
   &:hover {
     background-color: transparent;
