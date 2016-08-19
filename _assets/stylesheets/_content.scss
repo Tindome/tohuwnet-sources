@@ -50,6 +50,7 @@
     li {
         @include padding(null .25rem);
         color: text-color(dark, secondary);
+        padding: 0;
 
         &::before {
           content: ('•');

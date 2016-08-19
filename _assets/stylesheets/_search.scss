@@ -1,22 +1,28 @@
 .search {
-  color: text-color(dark);
+  color: text-color(light);
   font-size: $base-font-size;
   margin-top: .55rem;
 
   input {
     background-color: $primary-color;
     border: 0;
-    border-bottom: 2px dotted text-color(dark, hint);
+    border-bottom: 2px dotted text-color(light, hint);
     height: 2rem;
     outline: none;
     padding: .5rem;
     width: 100%;
 
-    &::-webkit-input-placeholder,
-    &::-moz-placeholder,
-    :-moz-placeholder,
+    &::-webkit-input-placeholder {
+      color: text-color(light);
+    }
+    &::-moz-placeholder {
+      color: text-color(light);
+    }
+    :-moz-placeholder {
+      color: text-color(light);
+    }
     :-ms-placeholder {
-      color: text-color(dark, icon);
+      color: text-color(light);
     }
 
     &:focus {
@@ -52,7 +58,7 @@
 
     .results-count {
       // font-size: $base-font-size;
-      color: text-color(dark, hint);
+      color: text-color(light, secondary);
       padding-left: .25rem;
     }
 
@@ -64,7 +70,7 @@
         padding: 0 .8rem;
 
         a {
-          color: text-color(dark);
+          color: text-color(light);
           text-decoration: underline;
         }
       }

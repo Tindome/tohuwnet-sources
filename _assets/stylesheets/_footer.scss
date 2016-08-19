@@ -28,6 +28,21 @@ aside {
       font-size: $base-font-size * .9;
     }
 
+    .post-meta li {
+      display: inline-block;
+      font-size: $base-font-size * .7;
+      padding: 0;
+
+      &::before {
+        content: ('•');
+        padding-right: .25rem;
+      }
+
+      &:first-child::before {
+        content: ('');
+      }
+    }
+
     .readmore {
       font-size: $base-font-size * .8;
     }
@@ -58,7 +73,7 @@ aside {
 }
 
 .license {
-  &::before { content: '\\\\ '; }
+  &::before { content: '• '; }
   @include media('<medium') {
     &::before { content: ''; }
     display: block;

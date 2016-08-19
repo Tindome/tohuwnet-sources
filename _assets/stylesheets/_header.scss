@@ -2,7 +2,7 @@
   @include outer-container(100%);
   background-color: $primary-color;
   box-shadow: 0 .25rem .33rem rgba(0, 0, 0, .26);
-  color: text-color(dark);
+  color: text-color(light);
   padding-bottom: .5rem;
 
   * {
@@ -29,7 +29,7 @@
     @include media('<x-large') { font-size: $base-font-size; }
     @include media('<medium') { display: none; }
     @include margin(1rem null null 1.5rem);
-    color: text-color(dark, secondary);
+    color: text-color(light, secondary);
     font-size: $base-font-size * 1.5;
     font-weight: normal;
   }

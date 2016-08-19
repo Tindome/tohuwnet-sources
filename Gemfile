@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem 'jekyll-redirect-from', '>= 0.10.0'
   gem 'jekyll-tagging', '>= 1.0.1'
   gem 'jekyll_version_plugin', '>= 1.0.2'
+  gem 'liquid-md5', '>= 0.0.2'
   gem 'liquid_reading_time', '>= 1.1.1'
   gem 'mini_magick', '>= 4.5.1'
   gem 'octopress-gist', '>= 1.3.5'

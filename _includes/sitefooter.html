@@ -1,7 +1,9 @@
 <footer class="site-footer">
   {% if site.recentposts_display %}
     <aside class="recentposts">
-      {% if site.recentposts_title %}<h2>{{ site.recentposts_title }}</h2>{% endif %}
+      {% capture postcount %}{{ site.posts | size }}{% endcapture %}
+      {% assign postcount = postcount | plus: 0 %}
+      {% if site.recentposts_title and postcount > 1 %}<h2>{{ site.recentposts_title }}</h2>{% endif %}
       <ul class="post-list">
         {% for post in site.posts | limit: {{ site.recentposts_count }} %}
           <!-- If displaying from the index page, don't list the most recent post, because it's already being displayed -->
@@ -12,7 +14,9 @@
             {% endif %}
           {% endunless %}
         {% endfor %}
-          <li><a class="readmore" href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}articles.html">More...</a></li>
+          {% if postcount > site.recentposts_count %}
+            <li><a class="readmore" href="{% if site.baseurl == '' %}/{% else %}{{ site.baseurl }}{% endif %}articles.html">More...</a></li>
+          {% endif %}
       </ul>
     </aside>
   {% endif %}
@@ -21,7 +25,8 @@
     <aside class="blogroll">
       {% if site.blogroll_title %}<h2>{{ site.blogroll_title }}</h2>{% endif %}
       <ul class="blogroll-list">
-        {% for link in site.blogroll | limit: {{ site.blogroll_footer_count }} %}
+        {% capture blogrollselections %}{% randomsort site.blogroll blogrollselections %}{% endcapture %}
+        {% for link in blogrollselections | limit:site.blogroll_footer_count %}
           <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a>{% if link.subtitle %}<span class="subtitle"> {{ link.subtitle }}</span>{% endif %}</li>
         {% endfor %}
       </ul>

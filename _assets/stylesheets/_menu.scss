@@ -3,13 +3,14 @@
 .sliding-panel-button {
   @include span-columns(1);
   background: none;
-  color: text-color(dark);
+  color: text-color(light, secondary);
   font-size: $base-font-size * 1.33;
   padding: .5em 0 0;
+  transition: color .25s linear;
 
   &:hover {
     background-color: transparent;
-    color: text-color(dark);
+    color: text-color(light);
   }
 }
 
@@ -56,6 +57,7 @@
   margin-top: 2rem;
 
   a {
+    color: text-color(light);
     text-transform: lowercase;
 
     &.fa:before {

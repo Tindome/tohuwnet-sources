@@ -29,12 +29,12 @@ $base-z-index: 0;
 // For the colors, try http://www.materialpalette.com and check _palette.scss
 $base-background-color:    color(white);
 $base-font-color:          text-color(dark, primary);
-$primary-color:            color(grey, lighten-4);
-$primary-alternate1-color: color(grey, lighten-3);
-$primary-alternate2-color: color(grey, darken-2);
-$accent-color:             color(light-blue, accent-4);
-$accent-fallback1-color:   color(light-blue, accent-1);
-$accent-fallback2-color:   color(light-blue, accent-2);
+$primary-color:            color(brown, darken-2);
+$primary-alternate1-color: color(brown);
+$primary-alternate2-color: color(brown, darken-3);
+$accent-color:             color(orange, accent-4);
+$accent-fallback1-color:   color(orange, accent-2);
+$accent-fallback2-color:   color(orange, accent-3);
 $action-color:             $accent-color;
 $action-alternate-color:   $accent-fallback1-color;
 
