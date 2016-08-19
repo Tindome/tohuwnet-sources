@@ -73,7 +73,7 @@ aside {
 }
 
 .license {
-  &::before { content: '\\\\ '; }
+  &::before { content: '• '; }
   @include media('<medium') {
     &::before { content: ''; }
     display: block;

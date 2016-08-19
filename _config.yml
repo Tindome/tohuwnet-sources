@@ -57,17 +57,20 @@ blogroll_title: More, Elsewhere
 blogroll_footer_count: 4
 blogroll:
     - name: Yellow Bricks
-      subtitle: Great, usable thoughts about VMware products
+      subtitle: Great, Usable Thoughts about the Virtualization World
       url: http://yellow-bricks.com
-    - name: Dadhacker
-      subtitle: Atari, Apple, Microsoft... He's seen some things
-      url: http://dadhacker.com
     - name: Cormac Hogan
       subtitle: Software-Defined Storage Guru Extraordinaire
       url: http://cormachogan.com
     - name: Punching Clouds
-      subtitle: Virtualization and cloud stuff from a VMware Architect
+      subtitle: Storage Virtualization from a VMware Architect
       url: http://punchingclouds.com
+    - name: Virtually Ghetto
+      subtitle: A Virtual Automation & Lab Genius
+      url: http://virtuallyghetto.com
+    - name: Dadhacker
+      subtitle: Atari, Apple, Microsoft... He's seen some things
+      url: http://dadhacker.com
 
 # Front Matter Defaults
 defaults:
