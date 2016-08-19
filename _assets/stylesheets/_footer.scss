@@ -31,6 +31,7 @@ aside {
     .post-meta li {
       display: inline-block;
       font-size: $base-font-size * .7;
+      padding: 0;
 
       &::before {
         content: ('•');
