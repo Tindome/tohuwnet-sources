@@ -1,6 +1,7 @@
 //= require vendor/jquery.js
 //= require vendor/lunr.js
 //= require vendor/search.js
+//= require vendor/fontawesome.js
 //= require vendor/littlefoot.js
 //= require vendor/twitter.js
 
