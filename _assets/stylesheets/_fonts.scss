@@ -1,6 +1,9 @@
-$fonts-dir: '../assets/fonts' !default;
+$fonts-dir: '../fonts' !default;
 
-@include webfont-face('MavenPro', '#{$fonts-dir}/mavenpro/maven_pro_regular-webfont');
-@include webfont-face('MavenPro', '#{$fonts-dir}/mavenpro/maven_pro_bold-webfont', bold);
-@include webfont-face('MavenPro Medium', '#{$fonts-dir}/mavenpro/maven_pro_medium-webfont');
-@include webfont-face('MavenPro Black', '#{$fonts-dir}/mavenpro/maven_pro_black-webfont');
+// Crimson
+@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-regular-webfont', normal, normal);
+@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-bold-webfont', bold, normal);
+@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-italic-webfont', normal, italic);
+@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-bolditalic-webfont', bold, italic);
+@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-semibold-webfont', 500, normal);
+@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-semibolditalic-webfont', 500, italic);

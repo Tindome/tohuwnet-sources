@@ -58,13 +58,13 @@
 
   a {
     color: text-color(light);
-    font-family: MavenPro;
+    font-family: $base-font-family;
     text-transform: lowercase;
 
     &.fa:before {
       font-family: FontAwesome;
       font-size: $base-font-size;
-      padding-right: .5rem;
+      padding-right: .7rem;
     }
   }
 }
