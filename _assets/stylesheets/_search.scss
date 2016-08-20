@@ -27,6 +27,11 @@
 
     &:focus {
       font-family: MavenPro;
+
+      &::-webkit-input-placeholder { color: transparent; };
+      &::-moz-placeholder { color: transparent; };
+      &:-moz-placeholder { color: transparent; };
+      &:-ms-placeholder { color: transparent; };
     }
   }
 
@@ -50,8 +55,8 @@
     }
 
     .close-button::before {
-      color: text-color(dark, icon);
-      content: $fa-var-times-circle;
+      color: text-color(light, icon);
+      content: '\f057';
       font-family: FontAwesome;
       margin-left: -.75rem;
     }
