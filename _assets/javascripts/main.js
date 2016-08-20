@@ -6,9 +6,9 @@
 //= require vendor/twitter.js
 
 // Avoid 'console' errors in browsers that lack a console.
-(function() {
+(function(event) {
     var method;
-    var noop = function () {};
+    var noop = function (event) {};
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -29,7 +29,7 @@
 }());
 
 // Submit the search form automatically if at least 3 characters are entered
-$('.search_box').on('input', function() {
+$('.search_box').on('input', function(event) {
     if ($(this).val().length > 2) {
         $(this).submit();
         $('.search-results').addClass('active');
@@ -37,12 +37,12 @@ $('.search_box').on('input', function() {
 });
 
 // Close the search results when the "close button" is clicked
-$('.search-results .close-button').click(function() {
+$('.search-results .close-button').click(function(event) {
     $('.search-results').removeClass('active');
     $('.search_box').val('');
 });
 
-$(document).ready(function(){
+$(document).ready(function(event){
   $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
     e.preventDefault();

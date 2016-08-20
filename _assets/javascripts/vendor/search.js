@@ -27,8 +27,8 @@ jQuery(function() {
   });
 
   // Event when the form is submitted
-  $("#search_form").submit(function(){
-      event.preventDefault();
+  $("#search_form").submit(function(event){
+      event.preventDefault(event);
       var query = $(".search_box").val(); // Get the value for the text field
       var results = window.idx.search(query); // Get lunr to perform a search
       display_search_results(results); // Hand the results off to be displayed
