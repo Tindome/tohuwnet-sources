@@ -8,4 +8,6 @@
 
   {% stylesheet main %}
   {% stylesheet littlefoot %}
+
+  {% if site.piwik_url and site.piwik_siteid %} {% include piwik.html %} {% endif %}
 </head>

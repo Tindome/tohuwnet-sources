@@ -97,8 +97,8 @@ license_title: "CC BY-NC-SA 4.0"
 license_url: https://tohuw.net/rights/
 
 # Analytics
-# piwik_url: https://tohuw.net/stats
-# piwik_siteid: 1
+piwik_url: https://stats.tohuw.net/
+piwik_siteid: 1
 
 # Build settings
 destination: ../tohuw.github.io
