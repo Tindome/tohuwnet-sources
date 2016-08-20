@@ -15,6 +15,11 @@
     font-size: $base-font-size * 1.5;
   }
 
+  h2 {
+    font-size: $base-font-size * 1.2;
+    font-weight: normal;
+  }
+
   blockquote {
     border-left: 5px solid $divider-color;
     color: text-color(dark, secondary);
@@ -24,6 +29,7 @@
 
   ul:not(.tags) {
     @include margin(1rem null);
+    list-style: disc outside none;
 
     li:not(.article-list-item):not(.post-meta li) {
       padding-left: 1rem;
@@ -34,6 +40,28 @@
         content: ('\f0da');
         padding-right: .25rem;
       }
+    }
+  }
+
+  ol {
+    counter-reset: li;
+    margin-left: .5em;
+
+    li {
+      counter-increment: li;
+      list-style-type: none;
+
+      &::before {
+        color: text-color(dark, secondary);
+        content: counter(li) '.';
+        margin-right: .33em;
+      }
+    }
+
+    ol {
+      li::before { content: counter(li, upper-alpha) '.'; }
+
+      ol li::before { content: counter(li, lower-roman) '.'; }
     }
   }
 
@@ -48,18 +76,18 @@
     }
 
     li {
-        @include padding(null .25rem);
-        color: text-color(dark, secondary);
-        padding: 0;
+      @include padding(null .25rem);
+      color: text-color(dark, secondary);
+      padding: 0;
 
-        &::before {
-          content: ('•');
-          padding-right: .25rem;
-        }
+      &::before {
+        content: ('•');
+        padding-right: .25rem;
+      }
 
-        &:first-child::before {
-          content: ('');
-        }
+      &:first-child::before {
+        content: ('');
+      }
     }
 
     .readtime-title.fa { color: text-color(dark, icon); }
@@ -82,11 +110,9 @@
 }
 
 .article-list-item {
-  img {
-    border-radius: 100%;
-  }
+  list-style-type: none;
 
-  h2 {
-    display: inline-block;
-  }
+  img { border-radius: 100%; }
+  h2 { display: inline-block; }
+  .post-meta { border-bottom: 0; }
 }

@@ -51,6 +51,7 @@ disqus_shortname: tohuw
 recentposts_display: true
 recentposts_title: More, Here
 recentposts_count: 3
+recentposts_meta: false
 
 # Blogroll
 blogroll_title: More, Elsewhere
