@@ -1,4 +1,4 @@
-$fonts-dir: '../fonts' !default;
+$fonts-dir: '../assets/fonts' !default;
 
 @include webfont-face('MavenPro', '#{$fonts-dir}/mavenpro/maven_pro_regular-webfont');
 @include webfont-face('MavenPro', '#{$fonts-dir}/mavenpro/maven_pro_bold-webfont', bold);
