@@ -1,9 +1,14 @@
 $fonts-dir: '../assets' !default;
 
 // Crimson
-@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-regular-webfont', normal, normal);
-@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-bold-webfont', bold, normal);
-@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-italic-webfont', normal, italic);
-@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-bolditalic-webfont', bold, italic);
-@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-semibold-webfont', 500, normal);
-@include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-semibolditalic-webfont', 500, italic);
+@include webfont-face('Crimson', '#{$fonts-dir}/font-crimson/crimsontext-regular-webfont', normal, normal);
+@include webfont-face('Crimson', '#{$fonts-dir}/font-crimson/crimsontext-bold-webfont', bold, normal);
+@include webfont-face('Crimson', '#{$fonts-dir}/font-crimson/crimsontext-italic-webfont', normal, italic);
+@include webfont-face('Crimson', '#{$fonts-dir}/font-crimson/crimsontext-bolditalic-webfont', bold, italic);
+@include webfont-face('Crimson', '#{$fonts-dir}/font-crimson/crimsontext-semibold-webfont', 500, normal);
+@include webfont-face('Crimson', '#{$fonts-dir}/font-crimson/crimsontext-semibolditalic-webfont', 500, italic);
+
+// Fira Sans/Fira Sans Book
+@include webfont-face('Fira Sans', '#{$fonts-dir}/font-firasans/firasans-book-webfont', normal, normal);
+@include webfont-face('Fira Sans', '#{$fonts-dir}/font-firasans/firasans-medium-webfont', bold, normal);
+@include webfont-face('Fira Sans', '#{$fonts-dir}/font-firasans/firasans-bookitalic-webfont', normal, italic);
