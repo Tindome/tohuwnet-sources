@@ -5,6 +5,7 @@ gem 'jekyll', '>= 3.1.3'
 group :jekyll_plugins do
   gem 'autoprefixer-rails', '>= 6.3.6'
   gem 'jekyll-assets', '>= 2.2.5'
+  gem 'jekyll-compose', '>= 0.5.0'
   gem 'jekyll-feed', '>= 0.5.1'
   gem 'jekyll-redirect-from', '>= 0.10.0'
   gem 'jekyll-tagging', '>= 1.0.1'
