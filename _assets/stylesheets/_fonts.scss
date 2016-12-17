@@ -1,4 +1,4 @@
-$fonts-dir: '../fonts' !default;
+$fonts-dir: '../assets' !default;
 
 // Crimson
 @include webfont-face('Crimson', '#{$fonts-dir}/crimson/crimsontext-regular-webfont', normal, normal);

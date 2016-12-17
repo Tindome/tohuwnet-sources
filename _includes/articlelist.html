@@ -1,5 +1,5 @@
 <li class="article-list-item">
-  {% img '{{ image_path }}{{ post.thumbnail }}' magick:resize:100 alt:'Thumnail for post: {{ post.title }}' %}
+  {% img '{{ image_path }}{{ post.thumbnail }}' magick:resize:100x100 alt:'Thumnail for post: {{ post.title }}' %}
   <h2><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
   {% if site.recentposts_meta %}
     <ul class="post-meta">
