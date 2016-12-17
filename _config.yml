@@ -63,9 +63,6 @@ blogroll:
     - name: Cormac Hogan
       subtitle: Software-Defined Storage Guru Extraordinaire
       url: http://cormachogan.com
-    - name: Punching Clouds
-      subtitle: Storage Virtualization from a VMware Architect
-      url: http://punchingclouds.com
     - name: Virtually Ghetto
       subtitle: A Virtual Automation & Lab Genius
       url: http://virtuallyghetto.com
@@ -119,6 +116,9 @@ compress_html:
 
 # Plugin: jekyll-assets
 assets:
+  assets:
+    - "*.woff"
+    - "*.woff2"
   cache: false
   digest: false
   autoprefixer:
