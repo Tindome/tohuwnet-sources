@@ -7,7 +7,7 @@ updated:
 topic: tests
 tags: test1
 thumbnail: "mallard.jpg"
-listeningto: "Interpol – Lights"
+nowlistening: "Interpol – Lights"
 comments: true
 ---
 {{ post.thumbnail }}

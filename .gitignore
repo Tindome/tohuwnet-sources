@@ -2,5 +2,4 @@ _site/
 .sass-cache/
 .asset-cache/
 .jekyll-metadata
-_assets/.DS_Store
-_assets/fonts/.DS_Store
+.DS_Store

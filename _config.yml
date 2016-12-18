@@ -7,12 +7,12 @@ description: >
   virtualization solutions, and information technology systems.
 baseurl: ''
 url: "https://tohuw.net"
-timezone: America/New_York
+timezone: America/Chicago
 
 # Metadata
 language: en
 author: Ron Scott-Adams
-subtitle: Blinkenlights, Virtualization, & Yak Shaving
+subtitle: Clouds, Chaos, & Yak Shaving
 
 # Menu
 menuicons: true
@@ -22,7 +22,7 @@ menuitem_social: true
 
 # Search
 search_enabled: true
-search_placeholder: "&#xf002;"
+search_placeholder: "&#xf002; Search..."
 
 # Categories
 categories_display: false
@@ -90,6 +90,10 @@ defaults:
 # Layout: readtime
 readtime_display: true
 readtime_title: icon
+
+# Layout: nowlistening
+nowlistening_display: true
+nowlistening_title: icon
 
 # License
 license_display: true

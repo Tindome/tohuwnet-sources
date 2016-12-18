@@ -4,9 +4,9 @@ title: ""
 summary: ""
 date: 2016-08-30 09:16
 updated:
-topic: 
-tags: 
+topic:
+tags:
 thumbnail: {{ image_path }}
-listeningto: 
+nowlistening: 
 comments: true
 ---

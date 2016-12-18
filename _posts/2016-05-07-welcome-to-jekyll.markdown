@@ -7,7 +7,7 @@ updated:
 topic: tests
 tags: test1 test2
 thumbnail: "renstimpy-yakshaving.jpg"
-listeningto: "Interpol – Barricade"
+nowlistening: "Interpol – Barricade"
 comments: true
 ---
 Welcome to earth! (punches alien)

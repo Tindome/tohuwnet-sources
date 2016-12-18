@@ -1,6 +1,8 @@
 .site-footer {
   @include outer-container;
   background-color: $primary-alternate2-color;
+  background-image: url(asset_path('wasteland.jpg'));
+  background-size: cover;;
   box-shadow: 0 -.25rem .33rem rgba(0, 0, 0, .26);
   clear: both;
   color: text-color(light);

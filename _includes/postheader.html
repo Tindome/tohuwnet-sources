@@ -22,5 +22,9 @@
     {% if page.meta %} <li>{{ page.meta }}</li> {% endif %}
 
     {% if site.readtime_display %} {% include readtime.html %} {% endif %}
+
+    {% if site.nowlistening_display %}
+      {% if page.nowlistening or post.nowlistening %} {% include nowlistening.html %} {% endif %}
+    {% endif %}
   </ul>
 </header>

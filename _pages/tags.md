@@ -1,9 +1,10 @@
 ---
 layout: page
 permalink: tag/
-menuitem: false
 redirect_from:
 redirect_to:
+menuitem: false
+icon: 
 ---
 # Tags for {{ site.title }}
 

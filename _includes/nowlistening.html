@@ -1,0 +1,19 @@
+<li class="nowlistening tooltip-item">
+  <div class="tooltip">
+    <div class="tooltip-content">
+      Now Listening To:
+    </div>
+  </div>
+
+  {% if site.nowlistening_title == "icon" %}
+    <span class="nowlistening-title fa fa-music">
+  {% else %}
+    <span class="nowlistening-title">{{ site.nowlistening_title }}
+  {% endif %}
+  </span>
+  {% if post.nowlistening %}
+    {{ post.nowlistening }}
+  {% elsif page.nowlistening %}
+    {{ page.nowlistening }}
+  {% endif %}
+</li>
