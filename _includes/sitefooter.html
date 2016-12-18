@@ -7,7 +7,7 @@
       {% if site.recentposts_title and postcount > 1 %}<h2>{{ site.recentposts_title }}</h2>{% endif %}
       <ul class="post-list">
         {% if postcount > 1 %}
-          {% for post in site.posts | limit: {{ site.recentposts_count }} %}
+          {% for post in site.posts limit:site.recentposts_shortcount %}
             <!-- If displaying from the index page, don't list the most recent post, because it's already being displayed -->
             {% unless forloop.first and page.url == "/index.html" or forloop.first and page.url == "/" %}
               <!-- Make sure the post listed isn't the one being displayed on the current page -->
@@ -29,7 +29,7 @@
       {% if site.blogroll_title %}<h2>{{ site.blogroll_title }}</h2>{% endif %}
       <ul class="blogroll-list">
         {% capture blogrollselections %}{% randomsort site.blogroll blogrollselections %}{% endcapture %}
-        {% for link in blogrollselections | limit:site.blogroll_footer_count %}
+        {% for link in blogrollselections limit:site.blogroll_footer_count %}
           <li><a href="{{ link.url }}" target="_blank">{{ link.name }}</a>{% if link.subtitle %}<span class="subtitle"> {{ link.subtitle }}</span>{% endif %}</li>
         {% endfor %}
       </ul>

@@ -110,9 +110,15 @@
 }
 
 .article-list-item {
+  clear: left;
   list-style-type: none;
+  padding: 1rem 0;
 
-  img { border-radius: 100%; }
-  h2 { display: inline-block; }
+  img {
+    border-radius: 100%;
+    padding-right: 1rem;
+  }
+  
+  h3 { display: inline-block; }
   .post-meta { border-bottom: 0; }
 }

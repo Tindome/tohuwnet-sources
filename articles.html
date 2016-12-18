@@ -1,10 +1,19 @@
 ---
 layout: default
 ---
-<h1>Recent Articles</h1>
+{% capture postcount %}{{ site.posts | size }}{% endcapture %}
+{% assign postcount = postcount | plus: 0 %}
+
+{% if site.recentposts_longcount < postcount %}
+  {% capture recentcount %}{{ site.recentposts_longcount }}{% endcapture %}
+{% else %}
+  {% capture recentcount %}{{ site.posts | size }}{% endcapture %}
+{% endif %}
+
+<h1>{{ recentcount }} Recent Articles</h1>
 
 <ul class="post-list">
-  {% for post in site.posts %}
+  {% for post in site.posts limit:site.recentposts_longcount %}
     {% include articlelist.html %}
   {% endfor %}
 </ul>

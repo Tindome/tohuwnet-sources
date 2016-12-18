@@ -25,21 +25,30 @@ aside {
     };
 
     h3 {
-      font-size: $base-font-size * .9;
+      display: block;
+      font-size: $base-font-size;
+      font-weight: normal;
+      margin: 0;
     }
 
-    .post-meta li {
+    img { float: left; }
+
+    .post-meta {
       display: inline-block;
-      font-size: $base-font-size * .7;
-      padding: 0;
 
-      &::before {
-        content: ('•');
-        padding-right: .25rem;
-      }
+      li {
+        display: inline-block;
+        font-size: $base-font-size * .7;
+        padding: 0;
 
-      &:first-child::before {
-        content: ('');
+        &::before {
+          content: ('•');
+          padding-right: .25rem;
+        }
+
+        &:first-child::before {
+            content: '';
+        }
       }
     }
 

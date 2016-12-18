@@ -50,8 +50,10 @@ disqus_shortname: tohuw
 # Recent Posts List
 recentposts_display: true
 recentposts_title: More, Here
-recentposts_count: 3
-recentposts_meta: false
+recentposts_longcount: 25
+recentposts_shortcount: 3
+recentposts_meta: true
+recentposts_moremeta: false
 
 # Blogroll
 blogroll_title: More, Elsewhere
@@ -92,7 +94,7 @@ readtime_title: icon
 # License
 license_display: true
 license_title: "CC BY-NC-SA 4.0"
-license_url: https://tohuw.net/rights/
+license_url: /rights/
 
 # Analytics
 piwik_url: https://stats.tohuw.net/

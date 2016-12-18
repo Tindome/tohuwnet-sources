@@ -1,11 +1,13 @@
 <li class="article-list-item">
   {% img '{{ image_path }}{{ post.thumbnail }}' magick:resize:100x100 alt:'Thumnail for post: {{ post.title }}' %}
-  <h2><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  <h3><a title="Permalink to {{ post.title }}" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
   {% if site.recentposts_meta %}
     <ul class="post-meta">
       <li>{{ post.date | date: "%B %-d, %Y" }}</li>
-      <li>Tags: {{ post | tags }}</li>
-      {% if site.disqus_shortname %} <li>{% include disqus_count.html %}</li> {% endif %}
+      {% if site.recentposts_moremeta %}
+        <li>Tags: {{ post | tags }}</li>
+        {% if site.disqus_shortname %} <li>{% include disqus_count.html %}</li> {% endif %}
+      {% endif %}
     </ul>
   {% endif %}
 </li>
