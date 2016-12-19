@@ -58,6 +58,7 @@
   @include shift(1);
   font-size: $base-font-size * 1.33;
   margin-top: 2rem;
+  position: relative;
 
   a {
     color: text-color(light);

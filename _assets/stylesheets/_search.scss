@@ -1,7 +1,7 @@
 .search {
   color: text-color(light);
-  font-size: $base-font-size;
   margin-top: .55rem;
+  position: relative;
 
   input {
     background-color: transparent;
@@ -70,6 +70,7 @@
     z-index: -100;
 
     &.active {
+      height: 100vh;
       opacity: 100;
       z-index: 11;
     }
@@ -82,7 +83,6 @@
     }
 
     .results-count {
-      // font-size: $base-font-size;
       color: text-color(light, secondary);
       padding-left: .25rem;
     }
