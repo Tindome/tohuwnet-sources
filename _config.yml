@@ -2,9 +2,9 @@
 title: Tohuw.Net
 email: ron@tohuw.net
 description: >
-  Ron Scott-Adams is a Systems Engineer, with a passion for
-  creating, maintaining and explaining well-designed data centers,
-  virtualization solutions, and information technology systems.
+  Ron Scott-Adams is a Systems Engineer with a passion for
+  creating and explaining well-designed data centers
+  and next-generation application platforms.
 baseurl: ''
 url: "https://tohuw.net"
 timezone: America/Chicago
@@ -101,8 +101,8 @@ license_title: "CC BY-NC-SA 4.0"
 license_url: /rights/
 
 # Analytics
-piwik_url: https://stats.tohuw.net/
-piwik_siteid: 1
+# piwik_url: https://stats.tohuw.net/
+# piwik_siteid: 1
 
 # Build settings
 destination: ../tohuw.github.io
@@ -115,10 +115,14 @@ exclude:
   - Gemfile.lock
 permalink: /articles/:title
 
-# Layout: compress
 compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
   ignore:
     envs: [development]
+  blanklines: false
+  profile: true
 
 # Plugin: jekyll-assets
 assets:
