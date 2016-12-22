@@ -13,6 +13,7 @@
 
   .headers {
     @include span-columns (11);
+    @include media('<large') { @include span-columns (10.5); }
 
     * {
       display: inline-block;
@@ -21,6 +22,7 @@
 
   .site-title {
     font-size: $base-font-size * 2;
+    @include media('<large') { font-size: $base-font-size * 1.5; }
 
     a {
       color: inherit;

@@ -20,6 +20,7 @@ aside {
   &.recentposts {
     @include span-columns(6);
     @include shift(.5);
+    @include media('<large') { font-size: $base-font-size * .7; }
     @include media('<medium') {
       @include shift(1);
       @include omega;
@@ -29,6 +30,7 @@ aside {
     h3 {
       display: block;
       font-size: $base-font-size;
+      @include media('<large') { font-size: $base-font-size * .7; }
       font-weight: normal;
       margin: 0;
     }
@@ -41,6 +43,7 @@ aside {
       li {
         display: inline-block;
         font-size: $base-font-size * .7;
+        @include media('<large') { font-size: $base-font-size * .6; }
         padding: 0;
 
         &::before {
@@ -61,6 +64,7 @@ aside {
 
   &.blogroll {
     @include span-columns(5);
+    @include media('<large') { font-size: $base-font-size * .7; }
     @include media('<medium') {
       @include shift(1);
       @include omega;

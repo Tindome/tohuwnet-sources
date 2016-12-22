@@ -5,6 +5,10 @@
   background: none;
   color: text-color(light, secondary);
   font-size: $base-font-size * 1.33 !important;
+  @include media('<large') {
+    @include shift(.5);
+    font-size: $base-font-size * 1 !important;
+  }
   padding: .5em 0 0;
   transition: color .25s linear;
 
@@ -15,7 +19,7 @@
 }
 
 .sliding-panel-content {
-  @include span-columns(2.5);
+  @include span-columns(3);
   @include media('<large') { min-width: 50%; }
   @include media('<medium') { min-width: 100%; }
   @include position(fixed, 0 auto 0 0);
@@ -25,15 +29,14 @@
   background-size: cover;
   box-shadow: .5rem 0 .33rem -.25rem rgba(0, 0, 0, .26);
   height: 100%;
+  @include media('<large') { height: 80%; }
   overflow-x: hidden;
   overflow-y: auto;
   transform: translateX(-100%);
   transition: transform .25s linear;
   z-index: 999999;
 
-  &.is-visible {
-    transform: translateX(0);
-  }
+  &.is-visible { transform: translateX(0); }
 }
 
 .sliding-panel-fade-screen {

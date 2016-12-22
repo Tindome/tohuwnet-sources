@@ -10,6 +10,7 @@
     a {
       color: text-color(light);
       font-size: $base-font-size * .9;
+      @include media('<large') { font-size: $base-font-size * .6; }
     }
   }
 }
